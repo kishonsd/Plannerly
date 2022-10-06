@@ -43,10 +43,9 @@ public class DataManager {
         }
     
         if let data = FileManager.default.contents(atPath: url.path) {
-            
+        
         }
     }
-    
     
     //Load data from a file
     
