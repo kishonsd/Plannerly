@@ -51,6 +51,7 @@ class ListViewModel: ObservableObject {
     func saveItems() {
         if let encodeData = try? JSONEncoder().encode(items) {
             UserDefaults.standard.set(encodeData, forKey: itemsKey)
+            
         }
     }
 }
