@@ -99,6 +99,7 @@ public class DataManager {
                 try FileManager.default.removeItem(at: url)
             }catch{
                 fatalError(error.localizedDescription)
+                
             }
         }
     }
