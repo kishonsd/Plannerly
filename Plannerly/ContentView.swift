@@ -2,15 +2,14 @@
 //  ContentView.swift
 //  Plannerly
 //
-//  Created by kishon daniels on 10/6/22.
+//  Created by kishon daniels on 10/7/22.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 

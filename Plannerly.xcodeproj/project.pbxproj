@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		42601DCF28EF7C8C008EED76 /* PlannerlyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42601DCE28EF7C8C008EED76 /* PlannerlyApp.swift */; };
-		42601DD128EF7C8C008EED76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42601DD028EF7C8C008EED76 /* ContentView.swift */; };
 		42601DD328EF7C95008EED76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42601DD228EF7C95008EED76 /* Assets.xcassets */; };
 		42601DD628EF7C95008EED76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42601DD528EF7C95008EED76 /* Preview Assets.xcassets */; };
 		42601DE028EF7C96008EED76 /* PlannerlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42601DDF28EF7C96008EED76 /* PlannerlyTests.swift */; };
 		42601DEA28EF7C96008EED76 /* PlannerlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42601DE928EF7C96008EED76 /* PlannerlyUITests.swift */; };
 		42601DEC28EF7C96008EED76 /* PlannerlyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42601DEB28EF7C96008EED76 /* PlannerlyUITestsLaunchTests.swift */; };
-		42601DF928EF7D15008EED76 /* PlannerlyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42601DF828EF7D15008EED76 /* PlannerlyItem.swift */; };
-		42601DFB28EF7EDE008EED76 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42601DFA28EF7EDE008EED76 /* DataManager.swift */; };
+		42601E0628F0BB69008EED76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42601E0528F0BB69008EED76 /* ContentView.swift */; };
+		42601E0B28F0C015008EED76 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42601E0A28F0C015008EED76 /* ItemModel.swift */; };
+		42601E0E28F0C0EC008EED76 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42601E0D28F0C0EC008EED76 /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 /* Begin PBXFileReference section */
 		42601DCB28EF7C8C008EED76 /* Plannerly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plannerly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42601DCE28EF7C8C008EED76 /* PlannerlyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerlyApp.swift; sourceTree = "<group>"; };
-		42601DD028EF7C8C008EED76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		42601DD228EF7C95008EED76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42601DD528EF7C95008EED76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		42601DDB28EF7C96008EED76 /* PlannerlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlannerlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,8 +45,9 @@
 		42601DE528EF7C96008EED76 /* PlannerlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlannerlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42601DE928EF7C96008EED76 /* PlannerlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerlyUITests.swift; sourceTree = "<group>"; };
 		42601DEB28EF7C96008EED76 /* PlannerlyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerlyUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		42601DF828EF7D15008EED76 /* PlannerlyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerlyItem.swift; sourceTree = "<group>"; };
-		42601DFA28EF7EDE008EED76 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		42601E0528F0BB69008EED76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		42601E0A28F0C015008EED76 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		42601E0D28F0C0EC008EED76 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +78,7 @@
 		42601DC228EF7C8C008EED76 = {
 			isa = PBXGroup;
 			children = (
+				42601E0C28F0C0DA008EED76 /* ViewModels */,
 				42601DCD28EF7C8C008EED76 /* Plannerly */,
 				42601DDE28EF7C96008EED76 /* PlannerlyTests */,
 				42601DE828EF7C96008EED76 /* PlannerlyUITests */,
@@ -99,9 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				42601DCE28EF7C8C008EED76 /* PlannerlyApp.swift */,
-				42601DD028EF7C8C008EED76 /* ContentView.swift */,
-				42601DF828EF7D15008EED76 /* PlannerlyItem.swift */,
-				42601DFA28EF7EDE008EED76 /* DataManager.swift */,
+				42601E0528F0BB69008EED76 /* ContentView.swift */,
+				42601E0928F0BFF9008EED76 /* Models */,
 				42601DD228EF7C95008EED76 /* Assets.xcassets */,
 				42601DD428EF7C95008EED76 /* Preview Content */,
 			);
@@ -131,6 +131,22 @@
 				42601DEB28EF7C96008EED76 /* PlannerlyUITestsLaunchTests.swift */,
 			);
 			path = PlannerlyUITests;
+			sourceTree = "<group>";
+		};
+		42601E0928F0BFF9008EED76 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42601E0A28F0C015008EED76 /* ItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		42601E0C28F0C0DA008EED76 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				42601E0D28F0C0EC008EED76 /* ListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,10 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42601DD128EF7C8C008EED76 /* ContentView.swift in Sources */,
-				42601DFB28EF7EDE008EED76 /* DataManager.swift in Sources */,
+				42601E0B28F0C015008EED76 /* ItemModel.swift in Sources */,
 				42601DCF28EF7C8C008EED76 /* PlannerlyApp.swift in Sources */,
-				42601DF928EF7D15008EED76 /* PlannerlyItem.swift in Sources */,
+				42601E0E28F0C0EC008EED76 /* ListViewModel.swift in Sources */,
+				42601E0628F0BB69008EED76 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
