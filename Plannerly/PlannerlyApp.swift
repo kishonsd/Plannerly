@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct PlannerlyApp: App {
+    
+    @StateObject var listViewModel: ListViewModel = ListViewModel()
+    
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+            WindowGroup {
+                NavigationView {
+                    ListView()
+                }
+                .navigationViewStyle(StackNavigationViewStyle())
+                .environmentObject(listViewModel)
         }
     }
 }

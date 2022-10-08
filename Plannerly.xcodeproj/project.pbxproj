@@ -16,6 +16,10 @@
 		42601E0628F0BB69008EED76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42601E0528F0BB69008EED76 /* ContentView.swift */; };
 		42601E0B28F0C015008EED76 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42601E0A28F0C015008EED76 /* ItemModel.swift */; };
 		42601E0E28F0C0EC008EED76 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42601E0D28F0C0EC008EED76 /* ListViewModel.swift */; };
+		42601E1228F11B52008EED76 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42601E1128F11B52008EED76 /* AddView.swift */; };
+		42601E1628F12071008EED76 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42601E1528F12071008EED76 /* ListRowView.swift */; };
+		42601E1828F121E6008EED76 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42601E1728F121E6008EED76 /* ListView.swift */; };
+		42601E1A28F12384008EED76 /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42601E1928F12384008EED76 /* NoItemsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		42601E0528F0BB69008EED76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		42601E0A28F0C015008EED76 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		42601E0D28F0C0EC008EED76 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		42601E1128F11B52008EED76 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		42601E1528F12071008EED76 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		42601E1728F121E6008EED76 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		42601E1928F12384008EED76 /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +86,6 @@
 		42601DC228EF7C8C008EED76 = {
 			isa = PBXGroup;
 			children = (
-				42601E0C28F0C0DA008EED76 /* ViewModels */,
 				42601DCD28EF7C8C008EED76 /* Plannerly */,
 				42601DDE28EF7C96008EED76 /* PlannerlyTests */,
 				42601DE828EF7C96008EED76 /* PlannerlyUITests */,
@@ -99,9 +106,11 @@
 		42601DCD28EF7C8C008EED76 /* Plannerly */ = {
 			isa = PBXGroup;
 			children = (
+				42601E1428F11BB4008EED76 /* Views */,
+				42601E0928F0BFF9008EED76 /* Models */,
+				42601E0C28F0C0DA008EED76 /* ViewModels */,
 				42601DCE28EF7C8C008EED76 /* PlannerlyApp.swift */,
 				42601E0528F0BB69008EED76 /* ContentView.swift */,
-				42601E0928F0BFF9008EED76 /* Models */,
 				42601DD228EF7C95008EED76 /* Assets.xcassets */,
 				42601DD428EF7C95008EED76 /* Preview Content */,
 			);
@@ -147,6 +156,17 @@
 				42601E0D28F0C0EC008EED76 /* ListViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		42601E1428F11BB4008EED76 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42601E1128F11B52008EED76 /* AddView.swift */,
+				42601E1528F12071008EED76 /* ListRowView.swift */,
+				42601E1728F121E6008EED76 /* ListView.swift */,
+				42601E1928F12384008EED76 /* NoItemsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,8 +301,12 @@
 			files = (
 				42601E0B28F0C015008EED76 /* ItemModel.swift in Sources */,
 				42601DCF28EF7C8C008EED76 /* PlannerlyApp.swift in Sources */,
+				42601E1228F11B52008EED76 /* AddView.swift in Sources */,
+				42601E1828F121E6008EED76 /* ListView.swift in Sources */,
 				42601E0E28F0C0EC008EED76 /* ListViewModel.swift in Sources */,
 				42601E0628F0BB69008EED76 /* ContentView.swift in Sources */,
+				42601E1A28F12384008EED76 /* NoItemsView.swift in Sources */,
+				42601E1628F12071008EED76 /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
